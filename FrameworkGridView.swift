@@ -1,9 +1,26 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
+
+    // MARK: - Variables
+
+    let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+
+    // MARK: - Body
+
     var body: some View {
-        FremeworkTitleView(imageName: "app-clip",
-                           nameApp: "App Clips")
+        LazyVGrid(columns: columns) {
+            FremeworkTitleView(imageName: "app-clip",
+                               nameApp: "App Clips")
+            FremeworkTitleView(imageName: "app-clip",
+                               nameApp: "App Clips")
+            FremeworkTitleView(imageName: "app-clip",
+                               nameApp: "App Clips")
+        }
     }
 }
 
