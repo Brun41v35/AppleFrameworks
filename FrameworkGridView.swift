@@ -13,13 +13,15 @@ struct FrameworkGridView: View {
     // MARK: - Body
 
     var body: some View {
-        LazyVGrid(columns: columns) {
-            FremeworkTitleView(imageName: "app-clip",
-                               nameApp: "App Clips")
-            FremeworkTitleView(imageName: "app-clip",
-                               nameApp: "App Clips")
-            FremeworkTitleView(imageName: "app-clip",
-                               nameApp: "App Clips")
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(MockData.frameworks) { framework in
+                        FremeworkTitleView(framework: framework)
+                    }
+                }
+            }
+            .navigationTitle("🍎 Frameworks")
         }
     }
 }
@@ -27,5 +29,6 @@ struct FrameworkGridView: View {
 struct FrameworkGridView_Previews: PreviewProvider {
     static var previews: some View {
         FrameworkGridView()
+            .preferredColorScheme(.dark)
     }
 }
