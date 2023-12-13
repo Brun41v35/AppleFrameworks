@@ -25,9 +25,6 @@ struct FremeworkTitleView: View {
 
 struct FremeworkTitleView_Previews: PreviewProvider {
     static var previews: some View {
-        FremeworkTitleView(framework: Framework(name: "App Clips",
-                                                imageName: "app-clip",
-                                                urlString: "",
-                                                description: ""))
+        FremeworkTitleView(framework: MockData.sampleFramework)
     }
 }
