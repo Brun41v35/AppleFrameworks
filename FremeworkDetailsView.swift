@@ -5,6 +5,7 @@ struct FremeworkDetailsView: View {
     // MARK: - Variable
 
     let framework: Framework
+    @Binding var isShowingDetailView: Bool
 
     // MARK: - Body
 
@@ -14,7 +15,7 @@ struct FremeworkDetailsView: View {
                 Spacer()
 
                 Button {
-                    
+                    isShowingDetailView = false
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(Color(.label))
@@ -44,7 +45,8 @@ struct FremeworkDetailsView: View {
 
 struct FremeworkDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FremeworkDetailsView(framework: MockData.sampleFramework)
+        FremeworkDetailsView(framework: MockData.sampleFramework,
+                             isShowingDetailView: .constant(false))
             .preferredColorScheme(.dark)
     }
 }
