@@ -6,6 +6,7 @@ struct FremeworkDetailsView: View {
 
     let framework: Framework
     @Binding var isShowingDetailView: Bool
+    @State private var isShowingSarariView = false
 
     // MARK: - Body
 
@@ -35,11 +36,14 @@ struct FremeworkDetailsView: View {
             Spacer()
 
             Button {
-
+                isShowingSarariView = true
             } label: {
                 AFButton(textTitle: "Learn More")
             }
         }
+        .sheet(isPresented: $isShowingSarariView, content: {
+            SafariView(url: URL(string: framework.urlString)!)
+        })
     }
 }
 
