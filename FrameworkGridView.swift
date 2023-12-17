@@ -4,6 +4,8 @@ struct FrameworkGridView: View {
 
     // MARK: - Variables
 
+    @StateObject var viewModel = FrameworkGridViewModel()
+
     let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -18,6 +20,9 @@ struct FrameworkGridView: View {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.frameworks) { framework in
                         FremeworkTitleView(framework: framework)
+                            .onTapGesture {
+                                viewModel.selectedFramework = framework
+                            }
                     }
                 }
             }
