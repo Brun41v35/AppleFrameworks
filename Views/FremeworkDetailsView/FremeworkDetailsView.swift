@@ -25,8 +25,11 @@ struct FremeworkDetailsView: View {
             Button {
                 isShowingSarariView = true
             } label: {
-                AFButton(textTitle: "Learn More")
+                Label("Learn More", systemImage: "book.fill")
             }
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+            .tint(.red)
         }
         .sheet(isPresented: $isShowingSarariView, content: {
             SafariView(url: URL(string: framework.urlString)!)
