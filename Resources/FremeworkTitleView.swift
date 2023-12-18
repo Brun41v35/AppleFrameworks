@@ -18,6 +18,7 @@ struct FremeworkTitleView: View {
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
+                .tint(Color(.label))
         }
         .padding()
     }

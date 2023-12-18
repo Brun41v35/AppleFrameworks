@@ -5,16 +5,12 @@ struct FremeworkDetailsView: View {
     // MARK: - Variable
 
     let framework: Framework
-    @Binding var isShowingDetailView: Bool
     @State private var isShowingSarariView = false
 
     // MARK: - Body
 
     var body: some View {
         VStack {
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
-            Spacer()
-
             FremeworkTitleView(framework:  framework)
             Text(framework.description)
                 .font(.body)
@@ -39,8 +35,7 @@ struct FremeworkDetailsView: View {
 
 struct FremeworkDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FremeworkDetailsView(framework: MockData.sampleFramework,
-                             isShowingDetailView: .constant(false))
+        FremeworkDetailsView(framework: MockData.sampleFramework)
             .preferredColorScheme(.dark)
     }
 }
