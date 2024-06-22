@@ -77,9 +77,9 @@
 			children = (
 				7E5CB3582C271B77003D2234 /* AppleFrameworksApp.swift */,
 				7E5CB35A2C271B77003D2234 /* ContentView.swift */,
+				7E0D16342C27218800D93063 /* Framework.swift */,
 				7E5CB35C2C271B79003D2234 /* Assets.xcassets */,
 				7E5CB35E2C271B79003D2234 /* Preview Content */,
-				7E0D16342C27218800D93063 /* Framework.swift */,
 			);
 			path = AppleFrameworks;
 			sourceTree = "<group>";
