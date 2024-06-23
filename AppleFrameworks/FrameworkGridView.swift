@@ -1,21 +1,19 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
-
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-
+    
     var body: some View {
         LazyVGrid(columns: columns) {
-            FrameworkTitleView(name: "Metal", imageName: "metal")
-            FrameworkTitleView(name: "Metal", imageName: "metal")
-            FrameworkTitleView(name: "Metal", imageName: "metal")
-            FrameworkTitleView(name: "Metal", imageName: "metal")
-            FrameworkTitleView(name: "Metal", imageName: "metal")
-            FrameworkTitleView(name: "Metal", imageName: "metal")
+            ForEach(MockData.frameworks, id: \.id) { framework in
+                FrameworkTitleView(name: framework.name,
+                                   imageName: framework.imageName)
+            }
         }
     }
 }
@@ -25,10 +23,10 @@ struct FrameworkGridView: View {
 }
 
 struct FrameworkTitleView: View {
-
+    
     let name: String
     let imageName: String
-
+    
     var body: some View {
         VStack {
             Image(imageName)
