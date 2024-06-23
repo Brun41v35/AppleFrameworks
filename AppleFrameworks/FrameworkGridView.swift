@@ -9,10 +9,15 @@ struct FrameworkGridView: View {
     ]
 
     var body: some View {
-        LazyVGrid(columns: columns) {
-            ForEach(MockData.frameworks) { framework in
-                FrameworkTitleView(framework: framework)
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(MockData.frameworks) { framework in
+                        FrameworkTitleView(framework: framework)
+                    }
+                }
             }
+            .navigationTitle("🍎 Frameworks")
         }
     }
 }
