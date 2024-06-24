@@ -14,6 +14,7 @@
 		7E5CB35D2C271B79003D2234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CB35C2C271B79003D2234 /* Assets.xcassets */; };
 		7E5CB3602C271B79003D2234 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CB35F2C271B79003D2234 /* Preview Assets.xcassets */; };
 		7E5CB36A2C271B79003D2234 /* AppleFrameworksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CB3692C271B79003D2234 /* AppleFrameworksTests.swift */; };
+		7EA782B62C2A373C005EC593 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA782B52C2A373C005EC593 /* AFButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7E5CB35F2C271B79003D2234 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E5CB3652C271B79003D2234 /* AppleFrameworksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleFrameworksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5CB3692C271B79003D2234 /* AppleFrameworksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworksTests.swift; sourceTree = "<group>"; };
+		7EA782B52C2A373C005EC593 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				7E31EEC22C28E256003D98F5 /* FrameworkDetailView.swift */,
 				7E5CB35C2C271B79003D2234 /* Assets.xcassets */,
 				7E5CB35E2C271B79003D2234 /* Preview Content */,
+				7EA782B52C2A373C005EC593 /* AFButton.swift */,
 			);
 			path = AppleFrameworks;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				7E31EEC32C28E256003D98F5 /* FrameworkDetailView.swift in Sources */,
 				7E5CB35B2C271B77003D2234 /* FrameworkGridView.swift in Sources */,
 				7E0D16352C27218800D93063 /* Framework.swift in Sources */,
+				7EA782B62C2A373C005EC593 /* AFButton.swift in Sources */,
 				7E5CB3592C271B77003D2234 /* AppleFrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
