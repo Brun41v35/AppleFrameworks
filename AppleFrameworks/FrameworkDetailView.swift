@@ -21,13 +21,7 @@ struct FrameworkDetailView: View {
             Button {
                 print("Go to Web")
             } label: {
-                Text("Learn More")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .frame(width: 280, height: 50)
-                    .background(Color.red)
-                    .foregroundStyle(.background)
-                    .clipShape(.buttonBorder)
+                AFButton(title: "Learn More")
             }
         }
     }

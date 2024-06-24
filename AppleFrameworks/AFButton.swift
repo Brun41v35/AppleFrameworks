@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct AFButton: View {
+
+    var title: String
+
     var body: some View {
-        Text("Learn More")
+        Text(title)
             .font(.title2)
             .fontWeight(.semibold)
             .frame(width: 280, height: 50)
@@ -20,5 +23,5 @@ struct AFButton: View {
 }
 
 #Preview {
-    AFButton()
+    AFButton(title: "Learn More")
 }
