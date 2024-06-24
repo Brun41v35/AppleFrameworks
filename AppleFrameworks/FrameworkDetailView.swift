@@ -8,6 +8,19 @@ struct FrameworkDetailView: View {
 
         VStack {
 
+            HStack {
+                Spacer()
+                Button {
+
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundStyle(Color(.label))
+                        .imageScale(.large)
+                        .frame(width: 50, height: 50)
+                }
+            }
+            .padding()
+
             Spacer()
 
             FrameworkTitleView(framework: framework)
