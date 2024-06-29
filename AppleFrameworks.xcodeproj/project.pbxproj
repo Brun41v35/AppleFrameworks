@@ -83,9 +83,9 @@
 				7E5CB35A2C271B77003D2234 /* FrameworkGridView.swift */,
 				7E0D16342C27218800D93063 /* Framework.swift */,
 				7E31EEC22C28E256003D98F5 /* FrameworkDetailView.swift */,
+				7EA782B52C2A373C005EC593 /* AFButton.swift */,
 				7E5CB35C2C271B79003D2234 /* Assets.xcassets */,
 				7E5CB35E2C271B79003D2234 /* Preview Content */,
-				7EA782B52C2A373C005EC593 /* AFButton.swift */,
 			);
 			path = AppleFrameworks;
 			sourceTree = "<group>";

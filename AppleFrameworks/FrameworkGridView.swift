@@ -9,7 +9,7 @@ struct FrameworkGridView: View {
     ]
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.frameworks) { framework in
