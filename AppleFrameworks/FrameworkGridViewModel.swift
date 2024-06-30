@@ -4,9 +4,9 @@ final class FrameworkGridViewModel: ObservableObject {
 
     var selectedFramework: Framework? {
         didSet {
-            isShowingDetailView = true
+            isShowingDetail = true
         }
     }
 
-    @Published var isShowingDetailView = false
+    @Published var isShowingDetail = false
 }
